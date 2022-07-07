@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="main.css">
+    <title>DOM</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div id="page-banner">
+          <h1 class="title">Darülkütüb</h1>
+          <p>Books for Sima</p>
+          <form id="search-book">
+            <input type="text" placeholder="Searching Books" />
+          </form>
+        </div>
+      </header>
+      <div id="book-list">
+        <h2 class="title">Books</h2>
+          <ul>
+            <li>
+              <span class="name">Kuyucaklı Yusuf</span>
+              <span class="delete">DELETE</span>
+            </li>
+            <li>
+              <span class="name">Sırça Köşk</span>
+              <span class="delete">DELETE</span>
+            </li>
+            <li>
+              <span class="name">Kürk Mantolu Madonna</span>
+              <span class="delete">DELETE</span>
+            </li>
+            <li>
+              <span class="name">İçimizdeki Şeytan</span>
+              <span class="delete">DELETE</span>
+            </li>
+            <li>
+              <span class="name">Yeni Dünya</span>
+              <span class="delete">DELETE</span>
+            </li>
+          </ul>
+        </h2>
+      </div>
+      <form id="add-book">
+		<input type="checkbox" id="hide"/>
+		<label for="hide">Hide all books</label>
+        <input type="text" placeholder="Add a book..." />
+        <button>Add</button>
+      </form>
+	  <div id="tabbed-content">
+        <ul class="tabs">
+          <li data-target="#about" class="active">About</li>
+          <li data-target="#contact">Contact</li>
+        </ul>
+        <div class="panel active" id="about">
+          <p>Content for about tab...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+        </div>
+        <div class="panel" id="contact">
+          <p>Content for contact tab...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+        </div>
+      </div>
+    </div>
+	<script src="script.js"></script>
+  </body>
+</html>
